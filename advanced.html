@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Multimedia Webpage</h1>
+    </header>
+    <section>
+        <h2>List of Key Features</h2>
+        <ol type="I">
+            <li>Images</li>
+            <li>Tables</li>
+            <li>Forms with Validation</li>
+            <li>Multimedia Elements</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Sample Image</h2>
+        <img src="https://images.pexels.com/photos/1601076/pexels-photo-1601076.jpeg" alt="Scenic Landscape" width="500">
+    </section>
+    <section>
+        <h2>Contacts</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St</td>
+                <td>(123) 456-7890</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak St</td>
+                <td>(987) 654-3210</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>Mike Johnson</td>
+                <td>789 Pine St</td>
+                <td>(555) 123-4567</td>
+                <td>mikej@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily White</td>
+                <td>321 Birch St</td>
+                <td>(555) 987-6543</td>
+                <td>emilyw@example.com</td>
+            </tr>
+            <tr>
+                <td>David Brown</td>
+                <td>654 Maple St</td>
+                <td>(555) 456-7891</td>
+                <td>davidb@example.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a secure password" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label>Newsletter Subscription:</label><br>
+            <input type="radio" id="subscribe_yes" name="newsletter" value="yes" checked>
+            <label for="subscribe_yes">Yes</label><br>
+            <input type="radio" id="subscribe_no" name="newsletter" value="no">
+            <label for="subscribe_no">No</label><br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" id="interest_tech" name="interests" value="tech">
+            <label for="interest_tech">Technology</label><br>
+            <input type="checkbox" id="interest_sports" name="interests" value="sports">
+            <label for="interest_sports">Sports</label><br>
+            <input type="checkbox" id="interest_music" name="interests" value="music">
+            <label for="interest_music">Music</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section>
+        <h2>Multimedia Elements</h2>
+
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio><br><br>
+
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <footer>
+        <p>© 2025 My Multimedia Webpage</p>
+    </footer>
+</body>
+</html>
