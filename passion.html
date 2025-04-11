@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the Cosmos</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header styles */
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin: 1.5rem 0;
+            color: #64b5f6;
+        }
+        
+        /* Main content styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .intro {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        strong {
+            color: #64b5f6;
+            font-weight: 600;
+        }
+        
+        em {
+            font-style: italic;
+            color: #a5d6a7;
+        }
+        
+        /* Image gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .gallery-item {
+            width: 300px;
+            border: 2px solid #64b5f6;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(100, 181, 246, 0.4);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .gallery-item p {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Interactive section */
+        .interactive {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+            border: 1px solid #64b5f6;
+        }
+        
+        button {
+            background: linear-gradient(to right, #64b5f6, #1976d2);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #64b5f6, transparent);
+            margin: 2rem 0;
+        }
+        
+        .link-to-form {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #64b5f6;
+            text-decoration: none;
+            border-bottom: 1px dashed #64b5f6;
+            transition: all 0.3s ease;
+        }
+        
+        .link-to-form:hover {
+            color: #a5d6a7;
+            border-bottom-color: #a5d6a7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Cosmos</h1>
+        <p>Your journey through the wonders of the universe begins here</p>
+    </header>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Discover the Beauty of Space</h2>
+            <p>Astronomy is more than just stars and planets - it's the story of our universe and our place within it.</p>
+            <p><strong>Every atom in your body</strong> came from a star that exploded. <em>We are literally made of stardust.</em></p>
+            <br>
+            <p>Scroll down to explore cosmic wonders and test your space knowledge!</p>
+        </section>
+        
+        <hr>
+        
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Galaxy">
+                <p><strong>Galaxies:</strong> Vast cosmic islands containing billions of stars</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nebula">
+                <p><strong>Nebulae:</strong> Stellar nurseries where new stars are born</p>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Planets">
+                <p><strong>Exoplanets:</strong> Worlds orbiting distant stars</p>
+            </div>
+        </section>
+        
+        <section class="interactive">
+            <h2>Space Knowledge Quiz</h2>
+            <p>Test your astronomy knowledge with our quick quiz!</p>
+            <button id="quizButton">Take the Quiz</button>
+            <div id="quizResult"></div>
+        </section>
+        
+        <section class="interactive">
+            <h2>Night Sky Simulator</h2>
+            <p>See what stars are visible tonight in your location</p>
+            <button id="locationButton">Enter Your Location</button>
+            <div id="locationResult"></div>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>Join Our Astronomy Community</h2>
+            <p>Ready to dive deeper into the cosmos? Join our community of space enthusiasts!</p>
+            <a href="index.html" class="link-to-form">Register Now</a>
+            <br>
+            <span>(This links to our previous registration form)</span>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Explore the Cosmos. All rights reserved.</p>
+        <p>Made with ❤️ for the universe</p>
+    </footer>
+
+    <script>
+        // Quiz functionality
+        document.getElementById('quizButton').addEventListener('click', function() {
+            let answer = prompt("Which planet is known as the 'Red Planet'?");
+            
+            if (answer && answer.toLowerCase() === 'mars') {
+                alert("Correct! Mars is called the Red Planet due to iron oxide on its surface.");
+                document.getElementById('quizResult').innerHTML = '<p><strong>Well done!</strong> You got the correct answer.</p>';
+            } else {
+                alert("That's not correct. The answer is Mars!");
+                document.getElementById('quizResult').innerHTML = '<p><em>Try again!</em> The correct answer is Mars.</p>';
+            }
+        });
+        
+        // Location functionality
+        document.getElementById('locationButton').addEventListener('click', function() {
+            let city = prompt("Enter your city to see tonight's visible stars:");
+            
+            if (city) {
+                let visibleStars = ["Polaris", "Betelgeuse", "Vega", "Sirius", "Arcturus"];
+                let randomStars = visibleStars.sort(() => 0.5 - Math.random()).slice(0, 3);
+                
+                document.getElementById('locationResult').innerHTML = `
+                    <p>In <strong>${city}</strong> tonight, look for these bright stars:</p>
+                    <ul>
+                        <li>${randomStars[0]}</li>
+                        <li>${randomStars[1]}</li>
+                        <li>${randomStars[2]}</li>
+                    </ul>
+                    <p>Happy stargazing!</p>
+                `;
+            } else {
+                document.getElementById('locationResult').innerHTML = '<p>Please enter a location to see visible stars.</p>';
+            }
+        });
+    </script>
+</body>
+</html>

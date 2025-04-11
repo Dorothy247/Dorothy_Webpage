@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorothy Nhlapo - Beauty Pageant Enthusiast</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, grey, #e16e08);
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.2rem;
+            padding: 10px 0;
+        }
+        div.container {
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Dorothy Nhlapo's Beauty Pageant Passion</h1>
+        <h2>Celebrating Confidence, Grace, and Talent</h2>
+    </header>
+
+    <div class="container">
+        <p><strong>Hello! I'm Dorothy Nhlapo, a passionate model dedicated to bringing creative visions to life.</strong></p>
+        <p>
+            Modeling isn't just about looking good  it's about storytelling, expressing emotions, and creating art through movement and presence.
+            I specialize in fashion, commercial, and portrait modeling, with experience in both studio and outdoor settings.
+        </p>
+
+        <div>
+            <img src="https://images.pexels.com/photos/2137594/pexels-photo-2137594.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beauty Pageant Contestant" />
+        </div>
+
+        <p>
+            <em>Beauty pageants are a platform for growth, self-expression, and empowerment. It’s not just about winning, but about the journey and the impact contestants make.</em>
+        </p>
+
+        <button id="callToActionButton">Get Involved in a Pageant!</button>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Created with passion by Dorothy Nhlapo</p>
+    </footer>
+
+    <script>
+        let button = document.getElementById("callToActionButton");
+
+        button.addEventListener("click", function() {
+            let userName = prompt("What's your name?");
+            let userAge = prompt("How old are you?");
+            let city = prompt("Which city are you from?");
+            let wannaParticipate = confirm("Do you want to participate in a beauty pageant?");
+            if (userName) {
+                alert("Hello, " + userName + "! Get ready to shine in a beauty pageant.");
+            } else {
+                
+                alert("Hello, Visitor! Thanks for exploring the beauty pageant world.");
+                
+            }
+        });
+    </script>
+</body>
+</html>
